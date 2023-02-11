@@ -636,7 +636,7 @@ language-server = { command = "fsautocomplete", args = ["--adaptive-lsp-server-e
 config = { AutomaticWorkspaceInit = true, FSharp.ExternalAutocomplete = true }
 indent = { tab-width = 4, unit = "    " }
 comment-token = "//"
-roots = []
+roots = ["fsproj", "sln", ".git"]
 
 [[grammar]]
 name = "fsharp"
