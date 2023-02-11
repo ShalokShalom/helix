@@ -632,7 +632,8 @@ name = "fsharp"
 scope = "source.fsharp"
 injection-regex = "fsharp"
 file-types = ["fs", "fsx", "fsscript"]
-language-server = { command = "fsautocomplete", args = ["--adaptive-lsp-server-enabled"] }
+language-server = { command = "fsautocomplete", args = ["--adaptive-lsp-server-enabled", "--verbose"] }
+config = { AutomaticWorkspaceInit = true, FSharp.ExternalAutocomplete = true }
 indent = { tab-width = 4, unit = "    " }
 comment-token = "//"
 roots = []
