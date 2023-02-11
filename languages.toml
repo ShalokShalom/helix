@@ -628,6 +628,20 @@ name = "lean"
 source = { git = "https://github.com/Julian/tree-sitter-lean", rev = "d98426109258b266e1e92358c5f11716d2e8f638" }
 
 [[language]]
+name = "fsharp"
+scope = "source.fsharp"
+injection-regex = "fsharp"
+file-types = ["fs", "fsx", "fsscript"]
+language-server = { command = "fsautocomplete", args = ["--adaptive-lsp-server-enabled"] }
+indent = { tab-width = 4, unit = "    " }
+comment-token = "//"
+roots = []
+
+[[grammar]]
+name = "fsharp"
+source = { git = "https://github.com/Nsidorenco/tree-sitter-fsharp/", rev = "a6fb052fd4c2344e02fbd5dde84d9283a93a0104" }
+
+[[language]]
 name = "julia"
 scope = "source.julia"
 injection-regex = "julia"
